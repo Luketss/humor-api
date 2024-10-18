@@ -11,4 +11,4 @@ class UserSchema(SQLModel, table=True):
 
 class HumorSchema(SQLModel, table=True):
     id: Optional[int] = Field(default=None, primary_key=True)
-    humor_range: int = Field(index=True)
+    humor_range: int = Field()
